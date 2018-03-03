@@ -1,5 +1,5 @@
 # Open-CV-Python
-Find and draw chessboard corners
+Find and draw chessboard corners:
 Finds the positions of internal corners of the chessboard and then renders the detected chessboard corners:
 The function "findChessboardCorners()" attempts to determine whether the input image is a view of the chessboard pattern and locate the internal chessboard corners. The function returns a non-zero value if all of the corners are found and they are placed in a certain order (row by row, left to right in every row). Otherwise, if the function fails to find all the corners or reorder them, it returns 0. For example, a regular chessboard has 8 x 8 squares and 7 x 7 internal corners, that is, points where the black squares touch each other. The detected coordinates are approximate, and to determine their positions more accurately, the function calls cornerSubPix(). You also may use the function cornerSubPix() with different parameters if returned coordinates are not accurate enough.
 The function "drawChessboardCorners()" draws individual chessboard corners detected either as red circles if the board was not found, or as colored corners connected with lines if the board was found.
